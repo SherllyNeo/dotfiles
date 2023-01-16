@@ -14,4 +14,8 @@ else
 	. "$HOME/.xprofile"
 fi
 
-ssh-agent swm
+eval $(ssh-agent) &
+exec swm &
+sleep 5
+xcompmgr &
+sleep infinity 
