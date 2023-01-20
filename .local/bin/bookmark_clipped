@@ -1,0 +1,10 @@
+#!/bin/bash
+
+bookmark="$(xclip -o)"
+file="$HOME/.local/share/snippets"
+
+if grep -q "^$bookmark$" "$file"; then
+	exit
+else
+	echo "$bookmark" >> "$file"
+fi
