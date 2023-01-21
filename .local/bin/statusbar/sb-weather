@@ -1,0 +1,3 @@
+#!/bin/bash
+weather=$(curl "wttr.in/leicester?format=4") >> /dev/null
+echo "$weather |"
