@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo mount /dev/$1 /home/sherlly/usb
+sudo cp -r /home/sherlly/.local/share/password-store /home/sherlly/usb
+sudo umount /home/sherlly/usb
