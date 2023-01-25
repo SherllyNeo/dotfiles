@@ -1,7 +1,7 @@
 #!/bin/bash
 db=~/usb/Passwords.kdbx
-password="Ilovewindows@@yagami"
-printf "decrypting database... \n"
+read -p "please type in your database file password. This will take a moment to decrypt: " password
+printf "\n decrypting database... \n"
 selection=$( echo "$password" | keepassxc-cli ls -q "$db" | dmenu -i -l 50 ) >> /dev/null
 printf "decrypting password...\n"
 pass=$( echo "$password" | keepassxc-cli show -a "password" -q "$db" "$selection" )
