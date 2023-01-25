@@ -1,9 +1,10 @@
 #!/bin/bash
 db=~/usb/Passwords.kdbx
-read -p "please type in your password, things will be decrypted so be patient: " password
-printf "decrypting database..."
+password="Ilovewindows@@yagami"
+printf "decrypting database... \n"
 selection=$( echo "$password" | keepassxc-cli ls -q "$db" | dmenu -i -l 50 ) >> /dev/null
+printf "decrypting password...\n"
 pass=$( echo "$password" | keepassxc-cli show -a "password" -q "$db" "$selection" )
 echo "$pass" | xclip -sel clip
-echo "copied password for "$selection" to clipboard"
-sleep 1;
+echo "copied password for "$selection" to clipboard\n \n will be removed in 10 seconds! \n"
+sleep 10;
