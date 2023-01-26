@@ -1,0 +1,6 @@
+#!/bin/sh
+yt_url=$( xclip -o )
+channel_str=$( curl $yt_url | grep @id | grep -o 'https\:\/\/www\.youtube\.com\/channel\/U.......................' | head -1)
+channel_str_edited=${channel_str#*channel\/}
+channel_name=${yt_url#*@}
+echo https://www.scriptbarrel.com/xml.cgi?channel_id=$channel_str_edited "~$channel_name (Youtube)" >> ~/.config/newsboat/urls
