@@ -1,3 +1,4 @@
 #!/bin/bash
 
-st -e "memory_rust --numbers 30 5"
+st -e memory_rust -numbers 30 3
+sleep 5
