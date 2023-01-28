@@ -1,3 +1,4 @@
 #!/bin/bash
 
-games_list = ( "day_of_any_date" "memory_games" "dwarf_fortress" "game_of_life" )
+selection=$( ls ~/Games | dmenu -i -l 50 )
+"$HOME/Games/$selection"
