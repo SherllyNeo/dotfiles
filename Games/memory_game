@@ -1,0 +1,3 @@
+#!/bin/bash
+
+st -e "memory_rust"
