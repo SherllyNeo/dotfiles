@@ -1,0 +1,4 @@
+#!/bin/bash
+
+template=$( ls ~/.local/share/templates | dmenu -i -l 50 )
+xdotool type "$( bat "$HOME/.local/share/templates/$template" )"
