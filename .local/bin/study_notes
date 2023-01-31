@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "no study notes atm"
+sleep 5
