@@ -1,4 +1,2 @@
 #!/bin/bash
-
-echo "no study notes atm"
-sleep 5
+st -e flashcard-cli
