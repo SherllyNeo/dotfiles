@@ -1,0 +1,4 @@
+#!/bin/bash
+read -sp "pleas type in your password: " pass
+
+echo "$pass" | offline_rust_password_manager --show_entries
