@@ -1,4 +1,3 @@
 #!/bin/bash
-read -sp "pleas type in your password: " pass
-
+read -sp "please type in your password: " pass;
 echo "$pass" | spm --show_entries

@@ -1,4 +1,0 @@
-#!/bin/bash
-
-read -p "please type in what the password is for: " password_for
-pass add $password_for

@@ -1,0 +1,2 @@
+#!/bin/bash
+yt-dlp --ignore-errors --output "%(title)s.%(ext)s" --yes-playlist $1
