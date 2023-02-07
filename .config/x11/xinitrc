@@ -15,7 +15,8 @@ else
 fi
 
 eval $(ssh-agent) &
-exec swm &
+exec dwm &
+exec dwmblocks &
 sleep 5
 xcompmgr &
-sleep infinity 
+sleep infinity
