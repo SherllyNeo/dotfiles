@@ -14,9 +14,11 @@ else
 	. "$HOME/.xprofile"
 fi
 
+
 eval $(ssh-agent) &
 exec dwm &
 exec dwmblocks &
+#exec swm &
 sleep 5
 xcompmgr &
 sleep infinity
