@@ -1,3 +1,3 @@
 #!/bin/bash
 
-st -e vim $HOME/Documents/todo.txt
+st -e vim $HOME/.local/share/todo_file.csv
