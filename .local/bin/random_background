@@ -1,0 +1,5 @@
+#!/bin/bash
+ls "$HOME/Pictures/backgrounds" |sort -R |tail -1 |while read file; do
+	setbg "$HOME/Pictures/backgrounds/$file"
+	echo "$file"
+done

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cur_date=$(date +"%Y-%m-%d")
+
+echo $((($(date -d "$cur_date" +%s) - $(date -d "1996-09-29" +%s))/86400))
