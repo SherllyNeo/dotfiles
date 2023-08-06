@@ -1,0 +1,10 @@
+# vim: filetype=muttrc
+
+source ~/.config/neomutt/settings
+source ~/.config/neomutt/colours
+source ~/.config/neomutt/mappings
+
+# Accounts - make sure to set a ketmap for them in mappings
+source ~/.config/neomutt/accounts/account
+folder-hook $folder 'source ~/.config/neomutt/accounts/account'
+
