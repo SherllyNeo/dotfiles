@@ -1,11 +1,33 @@
-https://artixlinux.org/feed.php "tech"
-https://www.archlinux.org/feeds/news/ "tech"
+https://suckless.org/atom.xml
+https://mentalism-examples.tumblr.com/rss "~My Mentalism blog"
+https://sleuth2k7.tumblr.com/rss "~Carter's Deduction blog!"
+https://waploaded.me/feed/ "~film recommendations"
+https://rss.art19.com/apology-line  "~apology line"
+https://lifehacker.com/rss "~lifehacker (life skills)"
+https://feeds2.feedburner.com/TheArtOfManliness "~Art of Manliness (life skills)"
 
-https://steamcommunity.com/games/975370/rss/
-https://www.bay12games.com/dwarves/dev_now.rss
-http://feeds.bbci.co.uk/news/world/rss.xml
-http://feeds.bbci.co.uk/news/uk/rss.xml
+https://lukesmith.xyz/rss.xml "~Luke smith (blog)"
+https://lindypress.net/rss "~Lindy press (book blog)"
+https://notrelated.xyz/rss "~podcast"
 
+https://landchad.net/rss.xml "tech"
+https://based.cooking/index.xml "~Based cooking (lifestyle)"
+https://www.reddit.com/r/TheMagnusArchives.rss "~Magnus Archives (Reddit)"
+https://www.reddit.com/r/dwarffortress.rss "~Dwarf Fortress (Reddit)"
+https://www.reddit.com/r/nightvale.rss "~Night Vale (Reddit)"
+https://www.reddit.com/r/fitness.rss "~Fitness (Reddit)"
+
+https://artixlinux.org/feed.php
+https://www.archlinux.org/feeds/news/ "~Arch linux (news)"
+https://steamcommunity.com/games/975370/rss/ "~steam community (news)"
+https://www.bay12games.com/dwarves/dev_now.rss "~Dwarf fortress (news)"
+http://feeds.bbci.co.uk/news/world/rss.xml "~BBC world (news)"
+http://feeds.bbci.co.uk/news/uk/rss.xml "~BBC uk (news)"
+http://rss.art19.com/the-daily "~The daily (news)"
+
+https://videos.lukesmith.xyz/feeds/videos.xml?videoChannelId=2 "~Luke Smith (Videos)"
+https://www.scriptbarrel.com/xml.cgi?channel_id=UC2eYFnH61tmytImy1mTYvhA "~Luke Smith (YouTube)"
+https://www.scriptbarrel.com/xml.cgi?channel_id=UC7YOGHUfC1Tb6E4pudI9STA "~Mental Outlaw (Youtube)"
 https://www.scriptbarrel.com/xml.cgi?channel_id=UCrvuY59InDI3iKvopKT8PEw "~Welcome to nightvale (Youtube)"
 https://www.scriptbarrel.com/xml.cgi?channel_id=UCQHX6ViZmPsWiYSFAyS0a3Q "~Gotham Chess (Youtube)"
 https://www.scriptbarrel.com/xml.cgi?channel_id=UCv7bt2mYkNRehF5uvKHEHVQ "~The Broken Sword (Youtube)"
@@ -13,3 +35,18 @@ https://www.scriptbarrel.com/xml.cgi?channel_id=UCaifrB5IrvGNPJmPeVOcqBA "~Krugg
 https://www.scriptbarrel.com/xml.cgi?channel_id=UCUcpVoi5KkJmnE3bvEhHR0Q "~Rikvik maths (Youtube)"
 https://www.scriptbarrel.com/xml.cgi?channel_id=UCnINhoHWuVjUDXp7dav5e3A "~NelsonDellis (Youtube)"
 https://www.scriptbarrel.com/xml.cgi?channel_id=UCSJ4gkVC6NrvII8umztf0Ow "~lofi_girl (Youtube)"
+https://www.scriptbarrel.com/xml.cgi?channel_id=UC9kbY72arTLumLDCe5UURVw "~Ashes in the hour glass (Youtube)"
+https://www.scriptbarrel.com/xml.cgi?channel_id=UCodbH5mUeF-m_BsNueRDjcw "~Overly sarcastic productions (Youtube)"
+https://www.scriptbarrel.com/xml.cgi?channel_id=UCC_S5oOAJp0iaF4fDT3QS0g ~verilybitchie (Youtube)
+https://www.scriptbarrel.com/xml.cgi?channel_id=UCUuMYw2l2UeWyTGYixYfRCA ~EvanAndKatelyn (Youtube)
+https://www.scriptbarrel.com/xml.cgi?channel_id=UC6nSFpj9HTCZ5t-N3Rm3-HA ~Vsauce (Youtube)
+https://www.scriptbarrel.com/xml.cgi?channel_id=UC7_YxT-KID8kRbqZo7MyscQ ~markiplier/videos (Youtube)
+https://www.scriptbarrel.com/xml.cgi?channel_id=UCDzdCE9XbxTbgvuVdhbLtOQ ~ConnorPrice_ (Youtube)
+https://www.scriptbarrel.com/xml.cgi?channel_id=UCUMwY9iS8oMyWDYIe6_RmoA ~NoBoilerplate (Youtube)
+https://www.scriptbarrel.com/xml.cgi?channel_id=UC9x0AN7BWHpCDHSm9NiJFJQ ~NetworkChuck (Youtube)
+https://www.scriptbarrel.com/xml.cgi?channel_id=UCSp-OaMpsO8K0KkOqyBl7_w ~letsgetrusty (Youtube)
+https://www.scriptbarrel.com/xml.cgi?channel_id=UCwd5VFu4KoJNjkWJZMFJGHQ ~JacobSorber/videos (Youtube)
+https://www.scriptbarrel.com/xml.cgi?channel_id=UCMHZ1P2iYimObhtHKfPz7gw ~Namtao (Youtube)
+https://www.scriptbarrel.com/xml.cgi?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw ~ThePrimeagen (Youtube)
+https://www.scriptbarrel.com/xml.cgi?channel_id=UCiciOsypkXcqSFqSPd-NRVA ~kallmekris (Youtube)
+https://www.scriptbarrel.com/xml.cgi?channel_id= ~kallmekris (Youtube)
