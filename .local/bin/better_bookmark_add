@@ -1,0 +1,11 @@
+#!/bin/bash
+bookmark_link="$(xclip -o)"
+file="$HOME/.local/share/bookmarks.csv"
+
+if grep -q "$bookmark_link$" "$file"; then
+        exit
+else
+    name=$(whiptail --inputbox "Enter a name" 10 30 3>&1 1>&2 2>&3)
+        echo "$name,$bookmark_link" >> "$file"
+fi
+EOL

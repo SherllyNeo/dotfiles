@@ -1,0 +1,6 @@
+#!/bin/bash
+bookmark_csv="$HOME/.local/share/bookmarks.csv"
+selection=$(awk '{print $1}' FS=, "$bookmark_csv" | dmenu -i -l 50)  
+link=$(awk '$1 == "'"$selection"'" {print $2}' FS=, "$bookmark_csv" | cut -d' ' -f1) >> /dev/null
+xdotool type "$link"
+
