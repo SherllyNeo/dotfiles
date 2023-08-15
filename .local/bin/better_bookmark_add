@@ -3,9 +3,20 @@ bookmark_link="$(xclip -o)"
 file="$HOME/.local/share/bookmarks.csv"
 
 if grep -q "$bookmark_link$" "$file"; then
-        exit
+    whiptail --msgbox "$bookmark_link is already saved" 10 40 3>&1 1>&2 2>&3
+	exit
 else
-    name=$(whiptail --inputbox "Enter a name" 10 30 3>&1 1>&2 2>&3)
-        echo "$name,$bookmark_link" >> "$file"
+    name=$(whiptail --inputbox "Enter a name to save $bookmark_link" 10 40 3>&1 1>&2 2>&3)
+    if grep -q "^$name" "$file"; then
+        if (whiptail --yesno "$name already exists, would you like to overwrite it with new link: \n$bookmark_link" 10 40 3>&1 1>&2 2>&3); then
+            # overwrite
+            temp_file=$(awk '{ if ($1 == "'"$name"'") { print $1,"'"$bookmark_link"'" } else { print $1,$2 } }' OFS=, FS=, "$file")
+            echo "$temp_file" > "$file.tmp"
+            cp "$file.tmp" "$file"
+        else
+            exit
+        fi
+    else 
+	    echo "$name,$bookmark_link" >> "$file"
+    fi
 fi
-EOL
