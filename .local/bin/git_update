@@ -1,0 +1,10 @@
+#!/bin/bash
+
+dirs=$(find "$1/" -maxdepth 1 -type d )
+
+
+for folder in $dirs; do 
+    cd $folder;
+    [ -d .git ] && git pull && echo "updated $folder";
+    cd ..;
+done;
