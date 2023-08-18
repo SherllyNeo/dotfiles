@@ -14,11 +14,13 @@ else
 	. "$HOME/.xprofile"
 fi
 
-
 eval $(ssh-agent) &
 exec dwm &
 exec dwmblocks &
 #exec swm &
 sleep 5
 xcompmgr &
+random_background &
+git_update "$HOME/git" &
+git_update "$HOME/.local/src" &
 sleep infinity
