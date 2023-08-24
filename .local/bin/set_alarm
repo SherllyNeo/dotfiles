@@ -1,0 +1,18 @@
+#!/bin/sh 
+minutes_in_a_day=1440
+old=$(date +"%H:%M")
+new=$1
+
+
+IFS=: read old_hour old_min <<< "$old"
+IFS=: read hour min <<< "$new"
+total_old_minutes=$((10#$old_hour*60 + 10#$old_min))
+total_minutes=$((10#$hour*60 + 10#$min))
+minutes_to_sleep=$((total_minutes - total_old_minutes))
+
+# If value is in the past, set for next day
+[ $minutes_to_sleep -lt "0" ] && minutes_to_sleep=$(( $minutes_to_sleep + $minutes_in_a_day ))
+
+sleep "$minutes_to_sleep"m && mpv "$HOME/.local/share/alarm_sounds/alarm.webm"
+
+
