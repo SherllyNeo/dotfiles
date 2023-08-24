@@ -1,0 +1,4 @@
+#!/bin/bash
+# Get display output
+output=$( xrandr -q | awk '$2=="connected" {print $1}' )
+xrandr --output $output --brightness $1
