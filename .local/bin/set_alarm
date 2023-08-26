@@ -13,6 +13,6 @@ minutes_to_sleep=$((total_minutes - total_old_minutes))
 # If value is in the past, set for next day
 [ $minutes_to_sleep -lt "0" ] && minutes_to_sleep=$(( $minutes_to_sleep + $minutes_in_a_day ))
 
-sleep "$minutes_to_sleep"m && mpv "$HOME/.local/share/alarm_sounds/alarm.webm"
+sleep "$minutes_to_sleep"m && mpv --loop "$HOME/.local/share/alarm_sounds/alarm.webm"
 
 
