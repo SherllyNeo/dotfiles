@@ -1,15 +1,15 @@
 # decrypt passwods
-set imap_pass = "`pass show email/neomutt/gmail1`"
-set smtp_pass = "`pass show email/neomutt/gmail1`"
+set imap_pass = "`pass show email/neomutt/gmail2`"
+set smtp_pass = "`pass show email/neomutt/gmail2`"
 
 
 # User
-set from = "user@example.com"
+set from = "user2@example.com"
 set realname = "Firstname Lastname"
 
 # Gmail
 set imap_user = "user@example.com"
-set smtp_url = "smtps://user@smtp.example.com:465/"
+set smtp_url = "smtps://user2@smtp.example.com:465/"
 set smtp_authenticators = 'gssapi:login'
 
 # Ensure TLS is enforced
@@ -41,4 +41,4 @@ unset imap_passive
 set imap_keepalive = 300
 
 ## Hook -- IMPORTANT!
-account-hook $folder "set imap_user=user@example.com"
+account-hook $folder "set imap_user=user2@example.com"

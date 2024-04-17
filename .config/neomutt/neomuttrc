@@ -1,10 +1,25 @@
-# vim: filetype=muttrc
-
-source ~/.config/neomutt/settings
-source ~/.config/neomutt/colours
-source ~/.config/neomutt/mappings
-
-# Accounts - make sure to set a ketmap for them in mappings
+#accounts
 source ~/.config/neomutt/accounts/account
 folder-hook $folder 'source ~/.config/neomutt/accounts/account'
+
+source ~/.config/neomutt/accounts/account2
+folder-hook $folder 'source ~/.config/neomutt/accounts/account2'
+
+source ~/.config/neomutt/settings
+source ~/.config/neomutt/mappings
+source ~/.config/neomutt/colours
+source ~/.config/neomutt/gpg
+
+
+# link to mailcap file
+set mailcap_path = "$XDG_CONFIG_HOME/neomutt/Mailcap"
+# open attachments with mailcap with <return>
+bind attach <return> view-mailcap             
+# save attachments to a folder
+macro attach s '<save-entry> <bol>~/Documents/attachments/<eol>' 'save attachment'
+auto_view text/html		
+# automatically show html (mailcap uses lynx)
+
+
+
 
