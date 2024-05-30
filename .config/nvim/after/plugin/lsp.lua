@@ -1,6 +1,23 @@
 local lsp = require("lsp-zero")
 
-lsp.preset("recommended")
+manage_nvim_cmp = {
+  set_sources = 'lsp',
+  set_basic_mappings = true,
+  set_extra_mappings = false,
+  use_luasnip = true,
+  set_format = true,
+  documentation_window = true,
+}
+
+local lsp = require('lsp-zero').preset({
+  manage_nvim_cmp = {
+    set_extra_mappings = true,
+  }
+})
+
+-- lsp.preset("recommended")
+
+
 
 lsp.ensure_installed({
   'rust_analyzer',
@@ -26,6 +43,7 @@ cmp_mappings['<S-Tab>'] = nil
 lsp.setup_nvim_cmp({
   mapping = cmp_mappings
 })
+
 
 lsp.set_preferences({
     suggest_lsp_servers = false,
@@ -57,3 +75,4 @@ lsp.setup()
 vim.diagnostic.config({
     virtual_text = true
 })
+
